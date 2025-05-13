@@ -1,0 +1,27 @@
+[Unit]
+Description=NFS Manager Service
+After=network.target
+Requires=network.target
+
+[Service]
+Type=simple
+ExecStart=/usr/local/bin/nfsmanager.py start
+ExecStop=/usr/local/bin/nfsmanager.py stop
+Restart=always
+RestartSec=10
+StartLimitIntervalSec=60
+StartLimitBurst=5
+TimeoutStartSec=30
+TimeoutStopSec=30
+
+# En cas d'échec, attendre avant de redémarrer
+RestartPreventExitStatus=1
+RestartForceExitStatus=2
+
+# Gestion des erreurs
+StandardOutput=journal
+StandardError=journal
+SyslogIdentifier=nfsmanager
+
+[Install]
+WantedBy=multi-user.target 

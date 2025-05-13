@@ -1,0 +1,9 @@
+# Dépendances système (à installer avec apt)
+# python3
+# python3-pip
+# nfs-common
+# docker.io (optionnel - uniquement si vous utilisez des conteneurs Docker)
+
+# Dépendances Python
+typing-extensions>=4.0.0  # Pour le support avancé des types
+pathlib>=1.0.1  # Pour la gestion des chemins (inclus dans Python 3.6+) 
