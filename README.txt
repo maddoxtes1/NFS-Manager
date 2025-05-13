@@ -41,22 +41,7 @@ Configuration
 1. Éditez le fichier de configuration :
    sudo nano /etc/nfsmanager/config.json
 
-2. Exemple de configuration :
-   {
-       "shares": [
-           {
-               "name": "seafile",
-               "server": "192.168.1.71",
-               "remote_path": "/mnt/user/docker_volume/seafile",
-               "local_path": "/docker_volume/seafile",
-               "options": "rw,sync,hard,intr",
-               "docker": "seafile",
-               "delete_on_mount": true
-           }
-       ]
-   }
-
-   Options de configuration :
+2. Options de configuration :
    - name : Nom du partage (pour les logs)
    - server : Adresse IP du serveur NFS
    - remote_path : Chemin sur le serveur NFS
