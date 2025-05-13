@@ -23,7 +23,6 @@ Installation
 -----------
 1. Téléchargez les fichiers nécessaires :
    - nfsmanager.py
-   - config.json
    - nfsmanager.service
    - requirements.txt
    - install.sh
